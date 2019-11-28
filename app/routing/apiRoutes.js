@@ -9,11 +9,12 @@ module.exports = function(app) {
 
     app.post("/api/friends", function(req,res) {
         friendsData.push(req.body);
-        res.json()
+        res.json(true);
     });
 
     app.post("/api/clear", function(req,res) {
         friendsData.length = 0;
+        res.json({ ok: true });
     });
 
 };
