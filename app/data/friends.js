@@ -95,3 +95,5 @@ var friendsData = [
           ]
       }
 ];
+
+module.exports = friendsArray;
